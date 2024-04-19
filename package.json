@@ -1,0 +1,25 @@
+{
+  "name": "static_node_and_express_site",
+  "version": "1.0.0",
+  "description": "Treehouse Tech Degree Project for Unit 6",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobflob/static_node_and_express_site.git"
+  },
+  "author": "Jessie Dobson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dobflob/static_node_and_express_site/issues"
+  },
+  "homepage": "https://github.com/dobflob/static_node_and_express_site#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "pug": "^3.0.2"
+  }
+}

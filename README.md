@@ -1,2 +1,41 @@
 # static_node_and_express_site
 Treehouse Tech Degree Project 6
+
+## Style Changes
+- general layout styles 
+    - body
+        - Updated font-family to IBM Plex Sans (removed all references to Lato)
+        - Updated color to #262626
+        - Updated background-color to #111
+    - h1 elements
+        - Increased size of h1 to 3rem
+        - removed bottom padding from h1 with .box class
+    - h6 elements
+        - removed bottom padding from h6 with .box class
+    - p elements
+        - removed 15px style so now p uses default size of body
+    - li elements
+        - changed font-size to .9rem
+    - hover states
+        - added hover state to nav a, sidebar a, and btn-link class
+        - remove box shadow and border from cell img on hover
+    - header
+        - changed background-color to #111
+        - adjusted vertical alignment of span to top
+        - reduced line-height of span
+        - changed header button color to #262626
+    - sidebar
+        - adjusted background-color to #111
+        - adjusted h5 font-family to Caveat, increased font-size, and removed text-transform
+        - adjusted sidebar link color to #9a9a9a9
+        - updated border color to #262626
+- home page
+    - reduced bottom padding of intro
+    - switched border to only exist on last-of-type p
+    - adjusted padding of cell header
+- about and project pages
+    - adjusted font-size of p text
+    - reduced padding-top
+    - reduced margin on ul elements
+- error and not-found pages
+    - added styling to match max-width and padding of about and project pages

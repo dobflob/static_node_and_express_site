@@ -1,28 +1,17 @@
 extends layout.pug
 
 block content
-
   article.portfolio-intro
+    h1 Hello, Adventurer
+    
+    p Welcome to my portfolio project! Here we have a sampling of what I've completed during my Treehouse Tech Degree learning, demonstrating my understanding of Node.js/Express.js, template rendering, and serving static files.
 
-    //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
-    h1 Heading
-
-    //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Portfolio description
-
+    p Take a look around, make yourself at home, and don't forget to visit the github repo for each project to get to know a little more about my coding style and skills. I'd love do something cool together!
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
-
-      //- Use the Pug `each` iterator to loop over the projects in your data file  
-      
-        //- Use the example Pug code below and interpolated template literals as needed to dynamically generate:
-          //- The paths in the link's href and img's src attributes
-          //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
-          //- The project title for the h5 element's text
-
-        .cell
-          a(href='#')
-            img.thumbnail(src='https://placehold.it/550x550', alt='')
-            h5 My Site
-
+      each project in projects 
+        .cell 
+          a(href=`/projects/${project.id}`, title=`View ${project.project_name}'s Project Page`)
+            img.thumbnail(src=`${project.image_urls[0].img}`)
+            h5 #{project.project_name}

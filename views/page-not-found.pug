@@ -1,0 +1,12 @@
+extends layout 
+
+block content 
+  nav.nav
+    a(href='/')
+      span &larr;
+      |  Back
+  
+  article.error-content    
+    h1 Oof! We can't find that page
+    p Error: #{err.status} #{err.message}
+

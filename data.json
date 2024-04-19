@@ -1,0 +1,139 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "project_name": "Random Quotes",
+            "description": "The Random Quote Generator displays a random quote pulled from an array and pairs it with a random background-color. The quote changes on a set interval, or users can click a button to get a new quote/background combo.",
+            "focus": "JavaScript syntax, variables, loops, conditionals, etc.",
+            "technologies": ["HTML", "CSS", "JS", "Git"],
+            "live_link": "https://dobflob.github.io/random-quote-generator/",
+            "github_link": "https://github.com/dobflob/random-quote-generator",
+            "image_urls": [
+                {
+                    "img": "/static/images/qg-thumb.png",
+                    "alt": "Thumbnail of the Random Quote Generator header text"
+                },
+                {
+                    "img": "/static/images/qg-1.png",
+                    "alt": "Image of a quote by Chidi Anagonye, The Good Place, Season: 4 that reads: It turns out life isn't a puzzle that can be solved one time and it's done. You wake up every day, and you solve it again."
+                },
+                {
+                    "img": "/static/images/qg-2.png",
+                    "alt": "Image of a quote by Sam Weir, Freaks and Geeks, Season 1 that reads: I don't need another friend. I already have two. I mean, how many more friends does a guy need?"
+                },
+                {
+                    "img": "/static/images/qg-3.png",
+                    "alt": "Image of a quote by Schmidt, New Girl, Season 1 that reads: The economy stinks, bees are dying, and movies are pretty much all sequels now."
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "project_name": "Student Search",
+            "description": "A client-side search page to search a list of fictional students. Results are filterable using the search, and pagination updates based on the current number of students displayed.",
+            "focus": "DOM manipulation, debugging, CSS selectors",
+            "technologies": ["HTML", "CSS", "JS", "Git"],
+            "live_link": "https://dobflob.github.io/data-pagination-and-filtering-v1/",
+            "github_link": "https://github.com/dobflob/data-pagination-and-filtering-v1",
+            "image_urls": [
+                {
+                    "img": "/static/images/students-thumb2.png",
+                    "alt": "Thumbnail of the student grid"
+                },
+                {
+                    "img": "/static/images/students-1.png",
+                    "alt": "Screenshot of the student grid, which is displaying an unfiltered list of student cards"
+                },
+                {
+                    "img": "/static/images/students-3.png",
+                    "alt": "Screenshot of the student grid, which is displaying a few student cards as well as the pagination"
+                },
+                {
+                    "img": "/static/images/students-2.png",
+                    "alt": "Screenshot of the student grid filtered to only show students matching the search text 'Lo'"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "project_name": "Interactive Form",
+            "description": "An interactive form for a fictional conference. Users get immediate feedback when entering invalid feedback. Form fields change based on user selection, and activities with conflicting time slots disable when one is selected.",
+            "focus": "Form validation, accessibility, conditionals, and RegEx",
+            "technologies": ["HTML", "CSS", "JS", "Git"],
+            "live_link": "https://dobflob.github.io/interactive-form-v3/",
+            "github_link": "https://github.com/dobflob/interactive-form-v3",
+            "image_urls": [
+                {
+                    "img": "/static/images/form-thumb.png",
+                    "alt": "Thumbnail of the Registration Page header text"
+                },
+                {
+                    "img": "/static/images/form-1.png",
+                    "alt": "Screenshot of the registration form with the name field validated and the email address showing an invalid warning."
+                },
+                {
+                    "img": "/static/images/form-2.png",
+                    "alt": "Screenshot of the registration form with three activities selected and one activity disabled due to a time conflict."
+                },
+                {
+                    "img": "/static/images/form-3.png",
+                    "alt": "Screenshot of the registration form with two activities of the selected activities visible as well as the payment section and Register button."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "project_name": "Phrase Hunter",
+            "description": "This game randomly selects an idiom from an array and displays blanks on screen to represent letters and words. Users get five lives, losing a life for each incorrect guess. Incorrect guesses change the key to a red color, while correct guesses change the key to a green color. Win or lose, users will land on a page with the option to play again.",
+            "focus": "Object Oriented JavaScript, callbacks, array iteration",
+            "technologies": ["HTML", "CSS", "JS", "Git"],
+            "live_link": "https://dobflob.github.io/oop_game-v2/",
+            "github_link": "https://github.com/dobflob/oop_game-v2",
+            "image_urls": [
+                {
+                    "img": "/static/images/ph-thumb.png",
+                    "alt": "Thumbnail of the Phrase Hunter start page"
+                },
+                {
+                    "img": "/static/images/ph-1.png",
+                    "alt": "Screenshot of the Phrase Hunter game with the letter 's' correctly guessed. User has all five lives."
+                },
+                {
+                    "img": "/static/images/ph-2.png",
+                    "alt": "Screenshot of the Phrase Hunter game with a correctly guessed 's' and 'r' and an incorrect guess of 'b'. User is missing one life."
+                },
+                {
+                    "img": "/static/images/ph-3.png",
+                    "alt": "Screenshot of the Phrase Hunter game with all letters of the phrase correctly guessed except the last letter. User has four lives left. The phrase currently reads: when pigs fl_."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "project_name": "User API Request",
+            "description": "Using the public 'Random User Generator API' (https://randomuser.me/documentation), the program fetches a list of 12 random users and displays their data in a grid. Users can click on any employee to view additional detail in a modal. Once the modal is open, users can navigate through the employees.",
+            "focus": "AJAX basics, HTTP request methods, fetch(), public API requests",
+            "technologies": ["HTML", "CSS", "JS", "Git"],
+            "live_link": "https://dobflob.github.io/public_api_request/",
+            "github_link": "https://github.com/dobflob/public_api_request",
+            "image_urls": [
+                {
+                    "img": "/static/images/employees-thumb.png",
+                    "alt": "Thumbnail of the employee grid"
+                },
+                {
+                    "img": "/static/images/employees-1.png",
+                    "alt": "Employee grid displaying cards for all 12 employees"
+                },
+                {
+                    "img": "/static/images/employees-2.png",
+                    "alt": "Employee details modal opened with 'Next' button hover state active"
+                },
+                {
+                    "img": "/static/images/employees-3.png",
+                    "alt": "Employee grid filtered down to three results"
+                }
+            ]
+        }
+    ]
+}

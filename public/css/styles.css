@@ -17,12 +17,12 @@ body {
 
 body {
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #0a0a0a;
+  color: #262626;
   background: #fefefe;
-  background: #000;
+  background: #111;
   transform: translateX(0px);
   transition: all 0.4s ease-out;
 }
@@ -31,12 +31,13 @@ article {
   background: #fefefe;
 }
 
-h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+
+
+h1 {
+  font-size: 3rem;
 }
 
 h5{
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 2.5px;
   -webkit-text-transform: uppercase;
   text-transform: uppercase;
@@ -50,7 +51,6 @@ h6{
 }
 
 p{
-  font-size: 15px;
   color: #666;
 }
 
@@ -81,14 +81,18 @@ a {
 .box {
   width: 100%;
   max-width: 1200px;
-  padding: 40px 50px 30px;
+  padding: 20px 50px 30px;
   background: #fefefe;
   border-bottom: 1px solid #eaeaea;
 }
 
 .box h1,
 .box h6 {
-  margin: 0 auto 8px;
+  margin: 0 auto;
+}
+
+.box h1 {
+  color: #da614e;
 }
 
 .box h6 {
@@ -98,7 +102,7 @@ a {
 }
 
 .box li {
-  font-size: 13px;
+  font-size: .9rem;
 }
 
 
@@ -114,7 +118,6 @@ nav {
 nav a {
   width: 100%;
   vertical-align: middle;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
@@ -127,6 +130,10 @@ nav a span {
   font-size: 1.25rem;
 }
 
+nav a:hover{
+  color: #da614e;
+}
+
 .sidebar {
   position: absolute;
   top: 0;
@@ -137,7 +144,7 @@ nav a span {
   height: 100%;
   min-height: 100%;
   padding: 20px;
-  background: #000;
+  background: #111;
 }
 
 .sidebar-info-box {
@@ -161,36 +168,45 @@ nav a span {
 .sidebar h5 {
   color: #fefefe;
   margin: 0 auto 0.5rem;
+  font-family: 'Caveat', sans-serif;
+  font-size: 1.75rem;
+  text-transform: none;
 }
 
 .sidebar p {
   text-rendering: optimizeLegibility;
   line-height: 1.6;
   font-size: 14px;
-  color: #999
+  color: #999;
 }
 
 .sidebar a {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #555;
+  color: #9a9a9a;
+}
+
+.sidebar a:hover {
+  color: #da614e;
 }
 
 .header {
-  vertical-align: middle;
   color: #fefefe;
   height: 40px;
   padding: 0.5rem;
-  background: #0a0a0a;
-  border-left: 1px solid #0a0a0a;
+  background: #111;
+  border-left: 1px solid #262626;
 }
 
 .header span {
   display: inline-block;
   font-weight: bold;
+  font-family: 'Caveat', sans-serif;
+  font-size: 1.25rem;
+  vertical-align: top;
+  line-height: 1;
 }
 
 .header button {
@@ -201,7 +217,7 @@ nav a span {
   width: 20px;
   height: 16px;
   border: none;
-  background: #0a0a0a;
+  background: #262626;
   margin-top: 3px;
   margin-right: 10px;
   border-top: 2px solid #fefefe;
@@ -228,21 +244,23 @@ nav a span {
 }
 
 .portfolio-intro h1 {
-  font-size: 1.5rem;
-  color: #0a0a0a;
-  margin: 0 auto 8px;
+  color: #262626;
+  margin: 0 auto;
 }
 
 .portfolio-intro p {
   text-rendering: optimizeLegibility;
   font-size: 125%;
   margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.portfolio-intro p:last-of-type {
   padding-bottom: 40px;
   border-bottom: 1px solid #eaeaea;
 }
 
 .projects-box h5 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 13px;
   letter-spacing: 2.25px;
@@ -262,22 +280,35 @@ nav a span {
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 
+.cell img:hover {
+  width: 100%;
+  min-width: 100px;
+  border: none;
+  box-shadow: none;
+}
+
 
 /* 
   About and project pages styles 
 */
 .about-intro-box p,
 .project-info-box p {
-  font-size: 125%;
+  margin: 0;
 }
 
 .about-bio p {
-  font-size: 15px;
-  padding-top: 40px;
+  font-size: 1.2rem;
+  padding-top: 25px;
 }
 
-.skills-contact-box ul {
-  margin-bottom: 35px;
+.project-info-box p:first-of-type {
+  font-size: 1.2rem;
+  padding-bottom: 25px;
+}
+
+.skills-contact-box ul, 
+.project-tech-links-box ul {
+  margin: 10px 0 25px;
 }
 
 .project-img {
@@ -296,8 +327,31 @@ nav a span {
   max-width: 255px;
   margin: auto 0 5px 0;
   padding: 0.85em 1em;
-  background-color: #333;
+  background-color: #222;
   border: 1px solid transparent;
+  transition-property: background-color;
+  transition-duration: .5s;
+  transition-timing-function: ease;
+}
+
+.btn-link:hover {
+  color: #FFF;
+  font-size: 1.25rem;
+  padding: 0.5275em .75em;
+  background-color: #da614e;
+  font-weight: bold;
+}
+
+/* 
+  Error and Not Found pages styles 
+*/
+.error-content {
+  max-width: 1200px;
+  padding: 40px 50px 30px;
+}
+
+.error-content h1{
+  margin: 0 auto;
 }
 
 
@@ -305,12 +359,11 @@ nav a span {
   Tablet layout styles 
 */
 @media screen and (min-width: 768px) {
-  .sidebar h5 {
-    font-size: 1.25rem;
-  }
+
 
   .portfolio-intro h1 {
     font-size: 3rem;
+    color: #da614e;
   }
 
   .box {
@@ -333,6 +386,7 @@ nav a span {
 
   .cell h5 {
     font-size: 1.25rem;
+    padding-left: 6px;
   }
 
   .grid {
