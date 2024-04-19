@@ -30,7 +30,7 @@
         {
             "id": 1,
             "project_name": "Student Search",
-            "description": "A client-side search page to search a list of fictional students. Results are filterable using the search, and pagination updates based on the current number of students displayed.",
+            "description": "A client-side program to search a list of fictional students. Results are filterable using the search input, and the pagination updates based on the current number of students displayed.",
             "focus": "DOM manipulation, debugging, CSS selectors",
             "technologies": ["HTML", "CSS", "JS", "Git"],
             "live_link": "https://dobflob.github.io/data-pagination-and-filtering-v1/",
@@ -57,7 +57,7 @@
         {
             "id": 2,
             "project_name": "Interactive Form",
-            "description": "An interactive form for a fictional conference. Users get immediate feedback when entering invalid feedback. Form fields change based on user selection, and activities with conflicting time slots disable when one is selected.",
+            "description": "A registration form for a fictional conference. Users get immediate feedback when entering invalid information. Form fields change based on user selection, and activities with conflicting time slots disable when one is selected.",
             "focus": "Form validation, accessibility, conditionals, and RegEx",
             "technologies": ["HTML", "CSS", "JS", "Git"],
             "live_link": "https://dobflob.github.io/interactive-form-v3/",
@@ -111,7 +111,7 @@
         {
             "id": 4,
             "project_name": "User API Request",
-            "description": "Using the public 'Random User Generator API' (https://randomuser.me/documentation), the program fetches a list of 12 random users and displays their data in a grid. Users can click on any employee to view additional detail in a modal. Once the modal is open, users can navigate through the employees.",
+            "description": "Using the public 'Random User Generator API' (https://randomuser.me/documentation), the program fetches a list of 12 random users and displays their data in a grid. Users can click on any employee to view additional details in a modal. Once the modal is open, users can navigate through the employees.",
             "focus": "AJAX basics, HTTP request methods, fetch(), public API requests",
             "technologies": ["HTML", "CSS", "JS", "Git"],
             "live_link": "https://dobflob.github.io/public_api_request/",
