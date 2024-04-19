@@ -17,12 +17,11 @@ router.get('/projects/:id', (req, res, next) => {
     id = parseFloat(id);
 
     if (maxId < id || isNaN(id)) {
-        //res.render('page-not-found');
         next();
-    }
-
-    const project = projects[id];
-    res.render('project', { projects, project, id });
+    } else {
+        const project = projects[id];
+        res.render('project', { projects, project, id });
+    }    
 });
 
 module.exports = router;
